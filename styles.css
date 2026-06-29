@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f6f8;
   color: #1f2937;
 }
@@ -11,7 +11,6 @@ header {
   text-align: center;
   padding: 25px 20px;
 }
-
 header h1 {
   margin: 0;
   font-size: 32px;
@@ -22,46 +21,64 @@ nav ul {
   padding: 0;
   margin: 20px 0 0 0;
 }
-
 nav li {
   display: inline-block;
   margin: 0 10px;
 }
-
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
+nav a:hover {
+  text-decoration: underline;
+}
 
 main {
   padding: 40px 20px;
-  text-align: center;
 }
 
 .contenido {
   max-width: 800px;
   margin: 0 auto;
   background-color: white;
-  padding: 30px;
+  padding: 30px 40px;
   border: 1px solid #d1d5db;
 }
-
 .contenido h2 {
   color: #1e3a5f;
   margin-top: 0;
 }
-
 .contenido p {
   font-size: 18px;
   line-height: 1.6;
 }
 
 .foto {
+  display: block;
   width: 250px;
   max-width: 100%;
-  margin-top: 20px;
+  margin: 24px auto 0;
   border: 2px solid #1e3a5f;
+}
+
+.interes {
+  border-left: 3px solid #1e3a5f;
+  padding-left: 18px;
+  margin: 24px 0;
+}
+.interes h3 {
+  color: #1e3a5f;
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+.interes p {
+  margin: 0;
+}
+
+.contacto-item a {
+  color: #1e3a5f;
+  font-weight: bold;
 }
 
 footer {
@@ -69,4 +86,9 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 26px; }
+  .contenido { padding: 24px 20px; }
 }
